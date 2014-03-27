@@ -1,3 +1,8 @@
+define(['angular', 'angular.resource'], function(angular){
+
+
+
+
 'use strict';
 
 /* Services */
@@ -10,3 +15,8 @@ phonecatServices.factory('Phone', ['$resource',
       query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
     });
   }]);
+
+  
+  return phonecatServices;
+  
+});

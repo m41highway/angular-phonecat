@@ -1,3 +1,6 @@
+define(['angular', 'angular.route', 'phonecatAnimations', 'phonecatControllers', 'phonecatFilters', 'phonecatServices'], 	
+	function(angular, ngRoute, phonecatAnimations, phonecatControllers, phonecatFilters, phonecatServices){
+
 'use strict';
 
 /* App Module */
@@ -26,3 +29,7 @@ phonecatApp.config(['$routeProvider',
         redirectTo: '/phones'
       });
   }]);
+  
+  
+  return phonecatApp;
+});

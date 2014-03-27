@@ -1,3 +1,5 @@
+define(['angular'], function(angular){
+
 'use strict';
 
 /* Controllers */
@@ -20,3 +22,7 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
       $scope.mainImageUrl = imageUrl;
     }
   }]);
+
+  return phonecatControllers;
+  
+  });

@@ -1,3 +1,5 @@
+define(['angular', 'angular.animate' ], function(angular){
+
 var phonecatAnimations = angular.module('phonecatAnimations', ['ngAnimate']);
 
 phonecatAnimations.animation('.phone', function() {
@@ -49,4 +51,8 @@ phonecatAnimations.animation('.phone', function() {
     addClass: animateUp,
     removeClass: animateDown
   };
+});
+
+	return phonecatAnimations;
+
 });
